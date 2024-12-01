@@ -1,0 +1,43 @@
+Trabajo Práctico 5: AyDA
+
+Alumno: Mosainer Martín
+
+Ejercicio 1: OPCIONAL.
+
+
+Ejercicio 2: Explicación
+
+En el algoritmo de fuerza bruta para buscar un patrón dentro de un texto, 
+recorremos cada posición del texto, 
+comparando el patrón con una subcadena de igual longitud en cada posición. 
+Si hay una diferencia entre el patrón y la subcadena del texto en esa posición,
+la comparación se interrumpe, y el algoritmo avanza a la siguiente posición en el texto.
+
+Dado que el patrón es "GANDHI" (6 caracteres de largo) y el texto es "THERE_IS_MORE_TO_LIFE_THAN_INCREASING_ITS_SPEED" (47 caracteres de largo), realizaremos una comparación desde cada una de las posiciones posibles en el texto hasta que encontremos una coincidencia o lleguemos al final.
+
+Explicación de cada paso a paso:
+
+
+Paso 1: Número de Comparaciones por Posición
+El número total de posiciones donde podemos empezar a comparar el patrón en el texto es 
+47−6+1=42 posiciones.
+En cada una de estas posiciones, hacemos hasta 6 comparaciones (una por cada carácter del patrón) a menos que encontremos una discrepancia antes.
+
+
+Paso 2: Contar Comparaciones en Cada Posición
+
+Como el patrón "GANDHI" no aparece en el texto, en cada posición compararemos algunos o todos los caracteres del patrón antes de encontrar una discrepancia. A continuación, analizamos cada una de las posiciones posibles:
+
+En la primera posición del texto, compararemos la primera letra del patrón ("G") con la primera letra de la subcadena del texto. Como "T" ≠ "G", se hace 1 comparación antes de avanzar a la siguiente posición.
+Continuamos de esta forma en cada posición, comparando el primer carácter de "GANDHI" con el carácter correspondiente en la posición actual del texto. Como la primera letra no coincide en ninguna posición, realizamos 1 comparación en cada una de las 42 posiciones.
+
+
+
+Paso 3: Cálculo Total de Comparaciones
+Ya que solo se realiza una comparación en cada posición, 
+el número total de comparaciones es:    
+42×1=42
+Respuesta
+El número total de comparaciones de caracteres realizadas por el algoritmo de fuerza bruta en la búsqueda del patrón "GANDHI" en el texto es 42 comparaciones.
+
+
